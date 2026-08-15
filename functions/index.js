@@ -4,7 +4,7 @@
 const { onRequest } = require("firebase-functions/v2/https");
 const logger = require("firebase-functions/logger");
 
-const { fetchUrlText } = require("./ingest");
+const { fetchUrlText } = require("./url-ingest");
 const { buildPrompt, MODES } = require("./prompts");
 const { callGemini } = require("./gemini");
 
