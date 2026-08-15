@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In — Student Portal</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>Student Portal</h1>
+    <p class="subtitle">Sign in to use Crux, your document summarizer.</p>
+
+    <button id="googleBtn" class="google">Continue with Google</button>
+    <div class="divider">— or use email —</div>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="you@example.com" />
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="••••••••" />
+
+    <button id="signInBtn">Sign In</button>
+    <button id="signUpBtn" class="secondary">Create Account</button>
+    <p class="error" id="error"></p>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
+  <script src="../js/firebase-init.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+</html>
