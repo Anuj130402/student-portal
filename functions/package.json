@@ -1,0 +1,12 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for the Student Portal Crux summarizer",
+  "main": "index.js",
+  "engines": { "node": "22" },
+  "dependencies": {
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "node-html-parser": "^6.1.13"
+  },
+  "private": true
+}
