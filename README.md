@@ -27,3 +27,26 @@ This repository began as a legacy C++ baseline and is being overhauled, commit b
 - Firebase CLI (`npm install -g firebase-tools`)
 - A Firebase project with Authentication and Firestore enabled
 - A free Google Gemini API key from Google AI Studio
+
+## Setup
+
+1. Clone the repository:
+```bash
+   git clone https://github.com/Anuj130402/student-portal.git
+   cd student-portal
+```
+2. Install the Cloud Functions dependencies:
+```bash
+   cd functions
+   npm install
+```
+3. Provide your Gemini key to the backend. For local development, create a `.env` file inside `functions/` (already git-ignored):
+```
+   GEMINI_API_KEY=your_key_here
+```
+4. Start the Firebase emulator (functions run on port 5001):
+```bash
+   firebase emulators:start
+```
+5. Serve the frontend - open `frontend/pages/index.html` with any static server (for example, VS Code Live Server).
+
