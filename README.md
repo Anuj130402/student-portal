@@ -12,3 +12,11 @@ This repository began as a legacy C++ baseline and is being overhauled, commit b
   - **Analytical** — argument structure, claims, and reasoning.
   - **Data-Specific Easy-to-Remember** — pulls out figures, dates, and quantitative facts.
 - Save past summaries to your profile for later review.
+
+## Tech Stack
+
+- **Frontend:** HTML, CSS, and vanilla JavaScript.
+- **Auth & Database:** Firebase Authentication and Cloud Firestore.
+- **Backend:** Firebase Cloud Functions (v2, Node 22) - the Gemini API key lives here, never in the browser.
+- **AI:** Google Gemini (Flash) for summarization.
+- **Hosting:** Netlify for the static frontend, Firebase for functions.
