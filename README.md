@@ -20,3 +20,10 @@ This repository began as a legacy C++ baseline and is being overhauled, commit b
 - **Backend:** Firebase Cloud Functions (v2, Node 22) - the Gemini API key lives here, never in the browser.
 - **AI:** Google Gemini (Flash) for summarization.
 - **Hosting:** Netlify for the static frontend, Firebase for functions.
+
+## Prerequisites
+
+- Node.js 22 and npm
+- Firebase CLI (`npm install -g firebase-tools`)
+- A Firebase project with Authentication and Firestore enabled
+- A free Google Gemini API key from Google AI Studio
