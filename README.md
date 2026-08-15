@@ -50,3 +50,15 @@ This repository began as a legacy C++ baseline and is being overhauled, commit b
 ```
 5. Serve the frontend - open `frontend/pages/index.html` with any static server (for example, VS Code Live Server).
 
+## Usage
+
+1. Sign in on the login page.
+2. On the dashboard, drop a PDF or paste one or more URLs.
+3. Choose a summary mode and generate the summary.
+4. Save any summary to your profile to revisit it later.
+
+## Project Structure
+
+- `frontend/` - HTML pages, styles, and client JavaScript
+- `functions/` - Firebase Cloud Functions (Gemini calls live here)
+- `main.cpp` - the original legacy baseline, retained for history
