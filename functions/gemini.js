@@ -4,7 +4,7 @@
 const logger = require("firebase-functions/logger");
 
 // Model names change over time — confirm the current one in Google AI Studio.
-const GEMINI_MODEL = "gemini-2.0-flash";
+const GEMINI_MODEL = "gemini-flash-lite-latest";
 
 async function callGemini(parts) {
   const apiKey = process.env.GEMINI_API_KEY;
