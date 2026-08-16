@@ -124,3 +124,12 @@ saveBtn.addEventListener("click", async () => {
     saveBtn.textContent = "Save to profile";
   }
 });
+
+document.getElementById("clearBtn").addEventListener("click", () => {
+  document.getElementById("urls").value = "";
+  document.getElementById("pdfs").value = "";
+  errorEl.textContent = "";
+  resultEl.classList.add("hidden");
+  const counter = document.getElementById("urlCount");
+  if (counter) counter.textContent = "";
+});
