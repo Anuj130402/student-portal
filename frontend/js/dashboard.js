@@ -47,9 +47,10 @@ auth.onAuthStateChanged(async (user) => {
 async function buildSources() {
   const sources = [];
 
-  const urls = document.getElementById("urls").value
+const urls = document.getElementById("urls").value
     .split("\n").map((u) => u.trim()).filter(Boolean);
-  urls.forEach((u) => sources.push({ type: "url", value: u }));
+  const uniqueUrls = [...new Set(urls)];   // drop duplicate URLs
+  uniqueUrls.forEach((u) => sources.push({ type: "url", value: u }));
 
   const files = document.getElementById("pdfs").files;
   for (const file of files) {
