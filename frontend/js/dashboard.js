@@ -9,6 +9,16 @@ const resultModeEl = document.getElementById("resultMode");
 const saveBtn = document.getElementById("saveBtn");
 const saveStatus = document.getElementById("saveStatus");
 
+const urlsEl = document.getElementById("urls");
+const urlCountEl = document.getElementById("urlCount");
+if (urlsEl && urlCountEl) {
+  const updateCount = () => {
+    urlCountEl.textContent = `${urlsEl.value.length} characters`;
+  };
+  urlsEl.addEventListener("input", updateCount);
+  updateCount();
+}
+
 const MODE_LABELS = {
   short: "Short Summary",
   analytical: "Analytical",
